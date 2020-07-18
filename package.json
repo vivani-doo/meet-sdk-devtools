@@ -1,0 +1,34 @@
+{
+  "name": "meet-addons-devtools",
+  "version": "0.1.61",
+  "description": "Set of tools helping developing addons for Meet.rs",
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "npx webpack --mode=production",
+    "watch": "npx webpack --mode=development --watch",
+    "deploy": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://meet-rs-api@github.com/meet-rs-api/meet-addon-devtools.git"
+  },
+  "keywords": [
+    "meet",
+    "meet.rs"
+  ],
+  "author": "Vivani doo, Svilajnac",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meet-rs-api/meet-addon-devtools/issues"
+  },
+  "homepage": "https://github.com/meet-rs-api/meet-addon-devtools#readme",
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "meet-addons-sdk": "^0.4.71"
+  }
+}
